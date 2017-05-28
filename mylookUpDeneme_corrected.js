@@ -105,7 +105,7 @@ MyLookUpDeneme.prototype.getTags = function(tagName, txt, cb2) {
                     if (doc) {
 
                         var sentenceArray = txt;
-                        var stringArray = doc.value.split(" ");
+                        var stringArray = doc.searchString.split(" ");
 
                         arr = sentenceArray;
 

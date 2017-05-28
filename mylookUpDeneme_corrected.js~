@@ -74,7 +74,7 @@ MyLookUpDeneme.prototype.getCategory = function(sentence, cb) {
 
         db.collection('myCategory').count(function(err, count) { //not found category
 
-            if (counter == count) // don process if founded an it is in last document        !!!
+            if (counter == count && flag == false) // don process if founded an it is in last document        !!!
             {
                 cb(null, null, "no_category", null);
             }
